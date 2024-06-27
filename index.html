@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kibana Request Body Formatter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title text-center">Kibana Request Body Formatter</h1>
+                <div class="form-group">
+                    <label for="inputField">Paste HTML-encoded JSON or XML here:</label>
+                    <textarea id="inputField" class="form-control" rows="10" placeholder="Paste HTML-encoded JSON or XML here..."></textarea>
+                </div>
+                <button id="convertButton" class="btn btn-primary btn-block">Convert</button>
+                <div class="form-group mt-3">
+                    <label for="outputField">Formatted Output:</label>
+                    <pre id="outputField" class="form-control" style="height: 400px; overflow: auto;"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
